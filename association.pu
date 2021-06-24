@@ -1,0 +1,25 @@
+@startuml
+
+
+Department "1" -o "*" Employee
+
+class Department{
+    -  id: Integer
+    -  name: String
+    -  location: String
+    + {method} constructor
+    + {method} getters
+    + {method} setters
+}
+
+class Employee{
+    - id: Integer 
+    - name: String 
+    - salary: Double 
+    - email: String 
+    - department: Department 
+    + {method} constructor
+    + {method} getters
+    + {method} setters
+}
+@enduml
